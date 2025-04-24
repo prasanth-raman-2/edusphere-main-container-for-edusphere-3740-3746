@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/edusphere-main-container-for-edusphere-3740-3746/edu_sphere_core"
+}
