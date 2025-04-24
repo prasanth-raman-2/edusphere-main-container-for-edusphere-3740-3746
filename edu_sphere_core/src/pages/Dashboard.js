@@ -25,7 +25,8 @@ const Dashboard = () => {
                 p: 3,
                 textAlign: 'center',
                 height: '100%',
-                background: 'rgba(255, 255, 255, 0.05)'
+                background: '#FFFFFF',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
               }}
             >
               <Box sx={{ mb: 1 }}>

@@ -20,7 +20,7 @@ const Profile = () => {
     <>
       <PageTitle title="Profile" subtitle="Manage your account and view progress" />
       
-      <Paper sx={{ p: 3, background: 'rgba(255, 255, 255, 0.05)' }}>
+      <Paper sx={{ p: 3, background: '#FFFFFF', boxShadow: '0 2px 4px rgba(0,0,0,0.08)' }}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={4} sx={{ textAlign: 'center' }}>
             <Avatar

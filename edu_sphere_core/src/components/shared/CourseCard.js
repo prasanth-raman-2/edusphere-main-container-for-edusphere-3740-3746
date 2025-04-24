@@ -39,8 +39,8 @@ const CourseCard = ({
               label={category}
               size="small"
               sx={{
-                backgroundColor: 'rgba(232, 122, 65, 0.1)',
-                color: '#E87A41',
+                backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                color: '#4CAF50',
                 mb: 1
               }}
             />

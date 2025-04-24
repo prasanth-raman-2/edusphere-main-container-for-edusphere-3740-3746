@@ -6,16 +6,27 @@ import { routes } from './routes';
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     primary: {
-      main: '#E87A41', // Kavia orange
+      main: '#2196F3', // Modern blue
+      light: '#64B5F6',
+      dark: '#1976D2',
+    },
+    secondary: {
+      main: '#4CAF50', // Fresh green
+      light: '#81C784',
+      dark: '#388E3C',
     },
     background: {
-      default: '#1A1A1A',
-      paper: '#1A1A1A',
+      default: '#FFFFFF',
+      paper: '#F5F7FA',
     },
     text: {
-      primary: '#ffffff',
+      primary: '#2C3E50',
+      secondary: '#546E7A',
+    },
+    success: {
+      main: '#4CAF50',
     }
   },
   typography: {
@@ -24,11 +35,12 @@ const theme = createTheme({
       fontSize: '3.5rem',
       fontWeight: 600,
       lineHeight: 1.2,
+      color: '#2C3E50',
     },
     subtitle1: {
       fontSize: '1.1rem',
       lineHeight: 1.5,
-      color: 'rgba(255, 255, 255, 0.7)',
+      color: '#546E7A',
     }
   },
   components: {
@@ -42,9 +54,15 @@ const theme = createTheme({
           fontWeight: 500,
         },
         containedPrimary: {
-          backgroundColor: '#E87A41',
+          backgroundColor: '#2196F3',
           '&:hover': {
-            backgroundColor: '#FF8B4D',
+            backgroundColor: '#1976D2',
+          },
+        },
+        containedSecondary: {
+          backgroundColor: '#4CAF50',
+          '&:hover': {
+            backgroundColor: '#388E3C',
           },
         }
       }
@@ -52,9 +70,19 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#1A1A1A',
-          boxShadow: 'none',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+          backgroundColor: '#FFFFFF',
+          boxShadow: '0 2px 4px rgba(0,0,0,0.08)',
+          color: '#2C3E50',
+        }
+      }
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: '0 2px 4px rgba(0,0,0,0.08)',
+          '&:hover': {
+            boxShadow: '0 4px 8px rgba(0,0,0,0.12)'
+          }
         }
       }
     }
@@ -64,6 +92,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <BrowserRouter>
         <MainLayout>
           <Routes>

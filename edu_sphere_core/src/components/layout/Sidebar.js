@@ -43,14 +43,14 @@ const Sidebar = ({ mobileOpen, onDrawerToggle }) => {
             selected={location.pathname === item.path}
             sx={{
               '&.Mui-selected': {
-                backgroundColor: 'rgba(232, 122, 65, 0.1)',
+                backgroundColor: 'rgba(33, 150, 243, 0.1)',
                 '&:hover': {
-                  backgroundColor: 'rgba(232, 122, 65, 0.2)'
+                  backgroundColor: 'rgba(33, 150, 243, 0.2)'
                 }
               }
             }}
           >
-            <ListItemIcon sx={{ color: location.pathname === item.path ? '#E87A41' : 'inherit' }}>
+            <ListItemIcon sx={{ color: location.pathname === item.path ? '#2196F3' : 'inherit' }}>
               {item.icon}
             </ListItemIcon>
             <ListItemText primary={item.text} />
